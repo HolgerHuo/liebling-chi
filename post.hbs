@@ -60,22 +60,22 @@ into the {body} of the default.hbs template --}}
                 <div class="m-share__content js-sticky">
                   <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute='true'}}"
                     class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Facebook">
-                    <span class="icon-facebook" aria-hidden="true"></span>
+                    <span class="fa-brands fa-facebook" aria-hidden="true"></span>
                   </a>
                   <a href="https://twitter.com/intent/tweet?text={{encode title}}&url={{url absolute='true'}}"
                     class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Twitter">
-                    <span class="icon-twitter" aria-hidden="true"></span>
+                    <span class="fa-brands fa-twitter" aria-hidden="true"></span>
                   </a>
                   <a href="https://telegram.me/share/url?url={{url absolute='true'}}&text={{encode title}}"
                     class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Telegram">
-                    <span class="icon-telegram" aria-hidden="true"></span>
+                    <span class="fa-brands fa-telegram" aria-hidden="true"></span>
                   </a>
                   <a href="http://service.weibo.com/share/share.php?url={{url absolute='true'}}&title={{encode title}}"
                     class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Weibo">
-                    <span aria-hidden="true">微</span>
+                    <span class="fa-brands fa-weibo" aria-hidden="true"></span>
                   </a>
                   <button class="m-icon-button filled in-share progress js-scrolltop" aria-label="{{t "Scroll to top"}}">
-                    <span class="icon-arrow-top" aria-hidden="true"></span>
+                    <span class="fa-solid fa-arrow-up" aria-hidden="true"></span>
                     <svg aria-hidden="true">
                       <circle class="progress-ring__circle js-progress" fill="transparent" r="0" />
                     </svg>
@@ -144,21 +144,21 @@ into the {body} of the default.hbs template --}}
                 {{#if primary_author.website}}
                   <li>
                     <a href="{{primary_author.website}}" target="_blank" rel="noopener" aria-label="{{t "Website"}}">
-                      <span class="icon-globe" aria-hidden="true"></span>
+                      <span class="fa-solid fa-globe" aria-hidden="true"></span>
                     </a>
                   </li>
                 {{/if}}
                 {{#if primary_author.facebook}}
                   <li>
                     <a href="https://facebook.com/{{primary_author.facebook}}" target="_blank" rel="noopener" aria-label="Facebook">
-                      <span class="icon-facebook" aria-hidden="true"></span>
+                      <span class="fa-brands fa-facebook" aria-hidden="true"></span>
                     </a>
                   </li>
                 {{/if}}
                 {{#if primary_author.twitter}}
                   <li>
                     <a href="https://twitter.com/{{primary_author.twitter}}" target="_blank" rel="noopener" aria-label="Twitter">
-                      <span class="icon-twitter" aria-hidden="true"></span>
+                      <span class="fa-brands fa-twitter" aria-hidden="true"></span>
                     </a>
                   </li>
                 {{/if}}
@@ -197,10 +197,10 @@ into the {body} of the default.hbs template --}}
                       {{> "loop"}}
                     </div>
                     <button class="m-icon-button filled in-recommended-articles swiper-button-prev" aria-label="{{t "Previous"}}">
-                      <span class="icon-arrow-left" aria-hidden="true"></span>
+                      <span class="fa-solid fa-arrow-left" aria-hidden="true"></span>
                     </button>
                     <button class="m-icon-button filled in-recommended-articles swiper-button-next" aria-label="{{t "Next"}}">
-                      <span class="icon-arrow-right" aria-hidden="true"></span>
+                      <span class="fa-solid fa-arrow-right" aria-hidden="true"></span>
                     </button>
                   </div>
                 </div>

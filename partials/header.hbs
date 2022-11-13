@@ -5,7 +5,7 @@ This header template is shared across all the pages.
 <header class="m-header {{#if background}}with-picture{{/if}} js-header">
   <div class="m-mobile-topbar" data-animate="fade-down">
     <button class="m-icon-button in-mobile-topbar js-open-menu" aria-label="{{t "Open menu"}}">
-      <span class="icon-menu" aria-hidden="true"></span>
+      <span class="fa-solid fa-bars" aria-hidden="true"></span>
     </button>
     {{#if @site.logo}}
       <a href="{{@site.url}}" class="m-logo in-mobile-topbar">
@@ -20,13 +20,13 @@ This header template is shared across all the pages.
       </a>
     {{/if}}
     <button class="m-icon-button in-mobile-topbar {{^if @custom.enable_native_search}}js-open-search{{/if}}" {{#if @custom.enable_native_search}}data-ghost-search{{/if}} aria-label="{{t "Open search"}}">
-      <span class="icon-search" aria-hidden="true"></span>
+      <span class="fa-solid fa-magnifying-glass" aria-hidden="true"></span>
     </button>
   </div>
 
   <div class="m-menu js-menu">
     <button class="m-icon-button outlined as-close-menu js-close-menu" aria-label="{{t "Close menu"}}">
-      <span class="icon-close"></span>
+      <span class="fa-solid fa-circle-xmark"></span>
     </button>
     <div class="m-menu__main" data-animate="fade-down">
       <div class="l-wrapper">
@@ -57,14 +57,14 @@ This header template is shared across all the pages.
                   <span>
                     <a href="javascript:void(0);" class="js-open-secondary-menu">
                       {{t "More"}}
-                      <span class="icon-chevron-down" aria-hidden="true"></span>
+                      <span class="fa-solid fa-chevron-down" aria-hidden="true"></span>
                     </a>
                   </span>
                 </li>
               {{/if}}
               <li class="submenu-option js-submenu-option">
                 <button class="m-icon-button in-menu-main more js-toggle-submenu" aria-label="{{t "Open submenu"}}">
-                  <span class="icon-more" aria-hidden="true"></span>
+                  <span class="fa-solid fa-ellipsis" aria-hidden="true"></span>
                 </button>
                 <div class="m-submenu js-submenu">
                   <div class="l-wrapper in-submenu">
@@ -119,7 +119,7 @@ This header template is shared across all the pages.
           </nav>
           <div class="m-nav__right">
             <button class="m-icon-button in-menu-main {{^if @custom.enable_native_search}}js-open-search{{/if}}" {{#if @custom.enable_native_search}}data-ghost-search{{/if}} aria-label="{{t "Open search"}}">
-              <span class="icon-search" aria-hidden="true"></span>
+              <span class="fa-solid fa-magnifying-glass" aria-hidden="true"></span>
             </button>
             <div class="m-toggle-darkmode js-tooltip" data-tippy-content="{{t "Toggle dark mode"}}" tabindex="0">
               <label for="toggle-darkmode" class="sr-only">
@@ -127,8 +127,8 @@ This header template is shared across all the pages.
               </label>
               <input id="toggle-darkmode" type="checkbox" class="js-toggle-darkmode">
               <div>
-                <span class="icon-moon moon" aria-hidden="true"></span>
-                <span class="icon-sunny sun" aria-hidden="true"></span>
+                <span class="fa-solid fa-moon moon" aria-hidden="true"></span>
+                <span class="fa-solid fa-sun sun" aria-hidden="true"></span>
               </div>
             </div>
           </div>

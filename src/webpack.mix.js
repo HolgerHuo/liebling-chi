@@ -33,5 +33,5 @@ mix
     ]
   })
   .copyDirectory('sass/fonts/source-sans-pro/', '../assets/fonts/source-sans-pro/')
-  .copy('sass/fonts/icomoon/*.*', '../assets/fonts/icomoon/')
+  .copy('sass/fonts/fontawesome/*.*', '../assets/fonts/fontawesome/')
   .copy('sass/fonts/noto-serif/*.*', '../assets/fonts/noto-serif/');

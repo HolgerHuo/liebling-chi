@@ -66,6 +66,14 @@ into the {body} of the default.hbs template --}}
                     class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Twitter">
                     <span class="icon-twitter" aria-hidden="true"></span>
                   </a>
+                  <a href="https://telegram.me/share/url?url={{url absolute='true'}}&text={{encode title}}"
+                    class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Telegram">
+                    <span class="icon-telegram" aria-hidden="true"></span>
+                  </a>
+                  <a href="http://service.weibo.com/share/share.php?url={{url absolute='true'}}&title={{encode title}}"
+                    class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Weibo">
+                    <span aria-hidden="true">微</span>
+                  </a>
                   <button class="m-icon-button filled in-share progress js-scrolltop" aria-label="{{t "Scroll to top"}}">
                     <span class="icon-arrow-top" aria-hidden="true"></span>
                     <svg aria-hidden="true">

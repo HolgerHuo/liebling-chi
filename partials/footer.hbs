@@ -10,14 +10,81 @@ This footer template is shared across all the pages.
       </nav>
     {{/if}}
     <nav class="m-footer-social">
-      {{#if @site.facebook}}
-        <a href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener" aria-label="Facebook">
-          <span class="fa-brands fa-facebook" aria-hidden="true"></span>
+      {{#if @custom.wechat}}
+        <style>
+          .wechat{
+              position:relative;
+          }
+              .wechat::after {
+                  content: "";
+                  display: block;
+                  background-image: url("{{@custom.wechat}}");
+                  position: absolute;
+                  right: -45px;
+                  top: -145px;
+                  z-index: 99;
+                  width: 120px;
+                  height: 120px;
+                  transform-origin: bottom;
+                  transform: scale(0);
+                  background-size: cover;
+                  opacity: 0;
+                  -webkit-transition: all .4s ease-in-out;
+                  -o-transition: all .4s ease-in-out;
+                  transition: all .4s ease-in-out;
+              }
+          .wechat:hover::after{
+              transform:scale(1);
+              opacity: 1;
+          }
+        </style>
+        <a onClick="e=>e.preventDefault()" aria-label="WeChat QRCode">
+          <span class="fa-brands fa-weixin wechat" aria-hidden="true"></span>
+        </a>
+      {{/if}}
+      {{#if @custom.bilibili}}
+        <a href="{{@custom.bilibili}}" target="_blank" rel="noopener" aria-label="Bilibili">
+          <span class="fa-brands fa-bilibili" aria-hidden="true"></span>
+        </a>
+      {{/if}}
+      {{#if @custom.weibo}}
+        <a href="{{@custom.weibo}}" target="_blank" rel="noopener" aria-label="Weibo">
+          <span class="fa-brands fa-weibo" aria-hidden="true"></span>
         </a>
       {{/if}}
       {{#if @site.twitter}}
         <a href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener" aria-label="Twitter">
           <span class="fa-brands fa-twitter" aria-hidden="true"></span>
+        </a>
+      {{/if}}
+      {{#if @custom.email}}
+        <a href="mailto:{{@custom.email}}" target="_blank" rel="noopener" aria-label="Email">
+          <span class="fa-solid fa-envelope" aria-hidden="true"></span>
+        </a>
+      {{/if}}
+      {{#if @custom.youtube}}
+        <a href="https://www.youtube.com/@{{@custom.youtube}}" target="_blank" rel="noopener" aria-label="YouTube">
+          <span class="fa-brands fa-youtube" aria-hidden="true"></span>
+        </a>
+      {{/if}}
+      {{#if @custom.mastodon}}
+        <a href="{{@custom.mastodon}}" target="_blank" rel="noopener" aria-label="Mastodon">
+          <span class="fa-brands fa-mastodon" aria-hidden="true"></span>
+        </a>
+      {{/if}}
+      {{#if @custom.telegram}}
+        <a href="https://t.me/{{@custom.telegram}}" target="_blank" rel="noopener" aria-label="Telegram">
+          <span class="fa-brands fa-telegram" aria-hidden="true"></span>
+        </a>
+      {{/if}}
+      {{#if @custom.instagram}}
+        <a href="https://www.instagram.com/{{@custom.instagram}}/" target="_blank" rel="noopener" aria-label="Instagram">
+          <span class="fa-brands fa-instagram" aria-hidden="true"></span>
+        </a>
+      {{/if}}
+      {{#if @site.facebook}}
+        <a href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener" aria-label="Facebook">
+          <span class="fa-brands fa-facebook" aria-hidden="true"></span>
         </a>
       {{/if}}
       <a href="{{@site.url}}/rss" aria-label="RSS">

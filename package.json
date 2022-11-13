@@ -61,6 +61,38 @@
       },
       "since": {
         "type": "text"
+      },
+      "wechat": {
+        "type": "image",
+        "group": "homepage"
+      },
+      "weibo": {
+        "type": "text",
+        "group": "homepage"
+      },
+      "telegram": {
+        "type": "text",
+        "group": "homepage"
+      },
+      "mastodon": {
+        "type": "text",
+        "group": "homepage"
+      },
+      "instagram": {
+        "type": "text",
+        "group": "homepage"
+      },
+      "email": {
+        "type": "text",
+        "group": "homepage"
+      },
+      "bilibili": {
+        "type": "text",
+        "group": "homepage"
+      },
+      "youtube": {
+        "type": "text",
+        "group": "homepage"
       }
     }
   },

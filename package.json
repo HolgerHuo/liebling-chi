@@ -58,6 +58,9 @@
         "type": "text",
         "default": "/newsletter",
         "group": "homepage"
+      },
+      "since": {
+        "type": "text"
       }
     }
   },
